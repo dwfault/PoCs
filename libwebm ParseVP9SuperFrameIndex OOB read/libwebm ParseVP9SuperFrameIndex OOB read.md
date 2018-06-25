@@ -1,5 +1,7 @@
 ## libwebm ParseVP9SuperFrameIndex OOB read
 
+credit by ADLab of Venustech.
+
 ### Overview
 
 A bug exists in function `ParseVP9SuperFrameIndex` in libwebm_utils.cc of webmproject/libwebm below git version 12b42e9. The bug exists because of lack of value check. And it could result in a info leak vulnerability.
