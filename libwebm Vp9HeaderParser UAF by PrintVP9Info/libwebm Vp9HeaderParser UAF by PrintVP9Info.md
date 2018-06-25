@@ -1,5 +1,7 @@
 ## libwebm Vp9HeaderParser UAF by PrintVP9Info
 
+credit by ADLab of Venustech.
+
 ### Overview
 
 A Use-After-Free bug exists in function `OutputCluster` in webm_info.cc of webmproject/libwebm below git version 12b42e9. The bug exists because of the combination of  process logic in `Vp9HeaderParser::SetFrame` and misuse of it.
